@@ -1,0 +1,283 @@
+* {
+  margin: 0px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+/* TẠO BACKGROUND CHO CÁC PHẦN CÓ NỀN XÁM VÀ PHẦN CHỮ CÓ BACKGROUND MÀU XANH */
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.bg-blue {
+  background-color: #199cdb;
+  border-radius: 90px;
+  padding: 3px 12px;
+  color: white;
+  font-size: small;
+  height: fit-content;
+}
+
+/* TẠO STYLE CHO PHẦN CHỮ TRONG BANNER */
+.banner-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PHẦN NAVBAR: XẾP THÀNH HÀNG NGANG VÀ CÓ CÁC BORDER 2 BÊN, ẢNH TRONG NAVBAR Ở CHÍNH GIỮA */
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+
+.flex-box-item {
+  flex: 0 1 135px;
+  padding: 10px 0;
+  border-left: 1px solid #aaa;
+}
+
+#border-right {
+  border-right: 1px solid #aaa;
+}
+
+#flex-box-item {
+  flex: 0 0 210px;
+  border-left: 1px solid #aaa;
+}
+
+.flex-box .image {
+  height: 140px;
+  width: 130px;
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 50%;
+  border: 7px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.flex-box-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.flex-box-item i {
+  color: #199cdb;
+}
+
+/* PHẦN THÔNG TIN CHUNG */
+#personal-info {
+  background-color: #eee;
+}
+
+#personal-info i {
+  margin-right: 10px;
+  color: #199cdb;
+}
+
+ul.info {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.info li span {
+  font-weight: bold;
+}
+
+ul.info li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* PHẦN KINH NGHIỆM VÀ HOẠT ĐỘNG VÀ HỌC VẤN */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 70px auto;
+  border: 0.5px solid #aaa;
+  padding: 35px 20px;
+}
+
+.icon {
+  text-align: center;
+  font-size: 22px;
+}
+
+.grid-layout > .details {
+  grid-column: 1/-1;
+  padding-top: 50px;
+}
+
+.grid-layout ul {
+  list-style-type: "- ";
+  list-style-position: inside;
+  padding: 0;
+}
+
+.list {
+  position: relative;
+  padding-left: 30px;
+}
+
+.list::before {
+  content: "";
+  position: absolute;
+  background-color: #199cdb;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  left: 0;
+  top: 10px;
+}
+
+/* PHẦN KỸ NĂNG VÀ NGÔN NGỮ */
+.level-blue {
+  background-color: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.level-grey {
+  background-color: #ddd;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* PHẦN SỞ THÍCH */
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  padding-top: 50px;
+  justify-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.flex {
+  display: flex;
+  border-radius: 50%;
+  border: #199cdb solid 0.5px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  color: #199cdb;
+}
+
+/* PHẦN CHỨNG CHỈ - GIẢI THƯỞNG */
+#certi ul {
+  list-style-type: "- ";
+  list-style-position: inside;
+  padding: 0;
+}
+
+.certificate-first-item {
+  border-right: 1.5px solid #d6c08d;
+}
+
+/* PHẦN DỰ ÁN: TẠO ĐƯỢC BORDER NHƯ MẪU */
+.project-details {
+  flex: 0 1 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details h5 {
+  padding: 10px 20px;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+  margin: 0;
+}
+
+.three-items {
+  display: flex;
+  padding: 10px 0 10px 20px;
+  border: 1px solid #aaa;
+  border-bottom: 0;
+}
+
+.project-table {
+  height: 100%;
+}
+
+.project-table tr {
+  border: 0.5px solid #aaa;
+  border-bottom: 0;
+  vertical-align: baseline;
+}
+
+.project-table tr:last-child {
+  border-bottom: 0.5px solid #aaa;
+}
+
+.project-table td {
+  padding: 10px;
+}
+
+/* PHẦN LIÊN HỆ */
+#footer ul {
+  list-style-type: none;
+  list-style-position: inside;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#footer li i {
+  font-size: larger;
+  color: #199cdb;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* SỬ DỤNG VỚI JS */
+.hide {
+  display: none;
+}
+
+.button {
+  color: #222;
+  background-color: #d6c08d;
+  padding: 0px 8px;
+  border-radius: 15px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.shadow {
+  box-shadow: 0 0 3px grey;
+}

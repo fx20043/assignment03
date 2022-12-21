@@ -1,0 +1,45 @@
+/* TẠO STYLE CHO CÁC TRANG PROJECT CHARTER TRÊN TABLET VÀ MOBILE */
+
+@media (max-width: 768px) {
+  .grid-system {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* ĐẶT LẠI THỨ TỰ CHO GIỐNG MẪU */
+  #goals {
+    order: 0;
+  }
+  #scopes {
+    order: 1;
+  }
+  #team {
+    order: 2;
+  }
+  #primary {
+    order: 3;
+  }
+  #timeline {
+    order: 4;
+  }
+
+  /* STYLE LẠI PADDING VÀ MARGIN CHO PHÙ HỢP VỚI MÀN HÌNH TABLET VÀ MOBILE */
+  #goals .row .vertical-align-middle {
+    border-bottom: none;
+  }
+  #timeline .vertical-align-middle {
+    justify-content: flex-start;
+    padding: 30px 12px 0 12px !important;
+  }
+  #timeline .dashed-border {
+    padding-top: 0 !important;
+  }
+  #team .vertical-align-middle {
+    padding: 30px 12px 0 12px !important;
+  }
+  #primary .vertical-align-middle {
+    padding: 30px 12px 0 12px !important;
+  }
+}

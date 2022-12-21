@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  /* ẢNH TRONG NAVBAR MẤT ĐI */
+  nav img {
+    display: none;
+  }
+  #flex-box-item {
+    display: none;
+  }
+}
